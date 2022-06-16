@@ -1,31 +1,24 @@
 :root {
-  --color1: #6082b6;
+  --color1: #345485;
   --color2: #e6c74d;
 }
 section {
   padding: 100px 0;
 }
 header {
-  padding: 200px 0;
+  padding: 80px 0;
 }
+
 header,
 footer {
-  background: url(../img/pattern.png), var(--color1);
-  background: url(../img/pattern.png),
-    -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-  background: url(../img/pattern.png),
-    -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-  background: url(../img/pattern.png),
-    linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
-  filter: url(../img/pattern.png),
-    progid:
-      DXImageTransform.Microsoft.gradient(
-        startColorstr=var(--color1),
-        endColorstr=var(--color2),
-        GradientType=1
-      );
-  background-size: contain;
+  background:  var(--color1);
+  background: -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background:  -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
+  background:  linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--color1), endColorstr=var(--color2), GradientType=1);
+  /* background-size: contain; */
 }
+
 .itd_play {
   background-color: var(--color1);
   width: 60px;
@@ -61,7 +54,7 @@ footer {
   color: var(--bs-white);
   background-color: var(--color1);
 }
-.embed-container {
+/* .embed-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -76,12 +69,12 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 /* О курсе */
-.about, .shedule, .feedback {
+.forwhat, .schedule, .feedback {
     background-color: #eee;
 }
-.about i {
+.forwhat i {
     font-size: 25px;
     color: var(--color2);
 }
@@ -96,7 +89,7 @@ footer {
     align-items: center;
 }
 .line {
-    width: 100px;
+    width: 300px;
     height: 3px;
     background-color: var(--color1);
     margin: 15px auto 30px;
@@ -117,7 +110,7 @@ footer {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 /* процесс обуч-ия */
-.learning h5 {
+.about h5 {
     padding: 25px;
     border: 3px solid var(--color1);
 }
@@ -136,7 +129,28 @@ footer {
     height: 40px;
     padding: 5px;
 }
-
+.el_slide {
+  width: 380px;
+  height: 560px;
+  border: 3px solid var(--color1);
+  /* box-sizing: border-box; */
+  /* padding: 0; */
+}
+.el_img {
+  width: 300px;
+}
+.el_h {
+  min-height: 142px;
+}
+.el_h2 {
+  min-height: 200px;
+}
+.el_h3 {
+  min-height: 96px;
+}
+.el_f {
+  display: flex;
+}
 /* Цвет */
 .color1 {
     color: var(--color1);
