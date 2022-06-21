@@ -131,7 +131,7 @@ footer {
 }
 .el_slide {
   width: 380px;
-  height: 560px;
+  height: 520px;
   border: 3px solid var(--color1);
   /* box-sizing: border-box; */
   /* padding: 0; */
